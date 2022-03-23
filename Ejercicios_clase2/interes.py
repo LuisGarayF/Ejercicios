@@ -1,0 +1,8 @@
+n = float(input("Ingrese la cantidad a invertir : "))
+print("El monto de inversión es : $"+ str(n))
+i = float(input("Ingrese el interés anual : "))
+print("El interés anual es : "+ str(i)+"%")
+a = int(input("Ingrese cantidad de años : "))
+print("La cantidad de años ingresados son : "+ str(a)+ " años")
+interes = round((n*(i/(100 + 1)))**a, 2)
+print("Según el monto de inversión: $"+ str(n)+" y la tasa de interés de "+ str(i) + "%  en "+ str(a) +" años  es : "+ str(interes))
