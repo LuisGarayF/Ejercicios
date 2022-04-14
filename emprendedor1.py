@@ -11,7 +11,7 @@ print("\n>")
 
 precio_suscripcion = float(input("Ingrese el precio de la suscripción : \n>"))
 
-numero_usuarios = float(input("Ingrese el número de usuarios : \n>"))
+numero_usuarios = int(input("Ingrese el número de usuarios : \n>"))
 
 gastos_totales = float(input("Ingrese los gastos totales : \n>"))
 

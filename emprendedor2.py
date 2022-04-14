@@ -7,28 +7,18 @@ print("------------ Instrucciones --------------\n>")
 print("-----------------------------------------\n>")
 print("\n>")
 print("Ingrese solamente números enteros o reales\n>")
-print("\n>")
 
-precio_suscripcion = float(input("Ingrese el precio de la suscripción : \n>"))
+p = float(input("Ingrese el precio de la suscripción base : \n>"))
 
-numero_usuarios = float(input("Ingrese el número de usuarios : \n>"))
+u_n = int(input("Ingrese el número de usuarios normales: \n>"))
 
-gastos_totales = float(input("Ingrese los gastos totales : \n>"))
+u_p = int(input("Ingrese el número de usuarios premium: \n>"))
 
-utilidades = (precio_suscripcion * numero_usuarios) - gastos_totales
+g_t = float(input("Ingrese los gastos totales : \n>"))
 
-utilidades_premium = (utilidades/2) + utilidades
+utilidades = ((p *( u_n + (u_p * 1.5)))- g_t)
 
-tipo_usuario = int(input(" Seleccione 1 o 2 dependiendo de la opción: \n> 1. Usuario Premium \n> 2. Usuario normal \n>"))
-
-if tipo_usuario == 1 :
-
-    print(f"Las utilidades del negocio con usuarios premium son : \n> $ {utilidades_premium:.0f} ")
-
-
-elif tipo_usuario == 2 :
-    
-   print(f"Las utilidades del negocio con usuarios normales son : \n> $ {utilidades:.0f} ") 
+print(f"Las utilidades del negocio serian : \n> $ {utilidades:.0f} ")
     
 
 

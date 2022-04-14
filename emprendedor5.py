@@ -24,3 +24,14 @@ utilidades_anterior = float(input("Ingrese las utilidades del año anterior: \n>
 print(f"Las utilidades del año anterior son:\n> $ {utilidades_anterior:.0f}")
 
 print(f"La razón entre el año anterior con un valor de {utilidades_anterior} y el año actual {utilidades} es : {utilidades/utilidades_anterior}")
+
+
+if utilidades_anterior > utilidades:
+    
+    utilidades1 = utilidades_anterior-utilidades
+    print(f"El año anterior fue más rentable con una diferencia de  : \n> $ {utilidades1} ")
+    
+elif utilidades_anterior < utilidades: 
+     
+    utilidades2 = utilidades-utilidades_anterior
+    print(f"Actualmente es más rentable que el año anterior con una diferencia de  : \n> $ {utilidades2} ")
